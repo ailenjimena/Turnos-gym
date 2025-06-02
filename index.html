@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Turnos - Gimnasio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Reserva tu Turno</h1>
+  <div class="container">
+    <label for="clase">Clase:</label>
+    <select id="clase">
+      <option value="Zumba">Zumba</option>
+      <option value="Funcional">Funcional</option>
+      <option value="Boxeo">Boxeo</option>
+      <option value="Yoga">Yoga</option>
+      <option value="Calistenia">Calistenia</option>
+    </select>
+
+    <label for="horario">Horario:</label>
+    <select id="horario">
+      <option value="08:00">08:00</option>
+      <option value="10:00">10:00</option>
+      <option value="14:00">14:00</option>
+      <option value="18:00">18:00</option>
+      <option value="20:00">20:00</option>
+    </select>
+
+    <button onclick="reservarTurno()">Reservar</button>
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
